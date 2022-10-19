@@ -19,8 +19,8 @@ const Seo: VFC<MetaData> = ({
   pageImgWidth,
   pageImgHeight
 }) => {
-  const defaultTitle = 'SJB'
-  const defaultDescription = 'SJB'
+  const defaultTitle = 'EMVERSE'
+  const defaultDescription = 'EMVERSE'
 
   const title = defaultTitle
   const description = defaultDescription
@@ -42,7 +42,7 @@ const Seo: VFC<MetaData> = ({
       <meta property="og:image" content={imgUrl} />
       <meta property="og:image:width" content={String(imgWidth)} />
       <meta property="og:image:height" content={String(imgHeight)} />
-      <link rel="preconnect" href="https://sjb-hushimiinari.vercel.app/_next/image?url=%2Fmain_grap.png&w=3840&q=75" />
+      <link rel="preconnect" href="https://emverse.vercel.app/_next/image?url=%2Fmain_grap.png&w=640&q=75" />
       <link rel="canonical" href={url} />
     </Head>
   )
