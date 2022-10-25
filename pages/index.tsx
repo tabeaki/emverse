@@ -51,15 +51,15 @@ const Home: NextPage = () => {
   }
 
   async function claim() {
-    if (!address) {
-      connectWithMetamask();
-      return;
-    }
+     if (!address) {
+       //connectWithMetamask();
+       return;
+     }
 
-    if (isMismatch) {
-      switchNetwork?.(ChainId.Goerli);
-      return;
-    }
+    // if (isMismatch) {
+    //   switchNetwork?.(ChainId.Goerli);
+    //   return;
+    // }
 
     try {
       const tx = await signatureDrop?.claimTo(address, mintQuantity);
